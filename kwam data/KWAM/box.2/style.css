@@ -1,0 +1,31 @@
+section {
+    height: 30vh;
+    background-color: aqua;
+}
+h4 {
+    color: white;
+    }
+    body {
+        background-color: purple
+    }
+    p {
+        font-size: 35px; 
+        font-style: italic;  
+    }
+.p-1 {
+    color: brown; 
+}
+section {
+    border: 1px solid black;
+    margin: 60px 20px 40px 30px;
+}
+#head-text {
+    text-align: center;
+}
+span {
+    color: blueviolet;
+    font-style: italic;
+}
+.sp-2 {
+    color: white;
+}

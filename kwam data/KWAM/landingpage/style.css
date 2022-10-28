@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(27, 78, 173);
+}
+header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.hamburger-line {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.header-btn {
+    display: none;
+}
+.logo-box {
+    /* border: 1px solid white; */
+    width: 200px;
+   
+}
+
+.logo {
+    height: 50px;
+}
+
+
+.logo-text {
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+}
+
+
+.span-text {
+    color: cornflowerblue;
+    font-weight: 800;
+}
+ 
+
+nav {
+    /* border: 1px solid yellow; */
+    margin-right: 80px;
+    display: flex;
+    align-items: center
+}
+
+.nav-item {
+    /* border: 1px solid white; */
+    margin-right: 40px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid brown;
+}
+.hero {
+    /* border: 1px solid purple; */
+    display: flex;
+    padding-top: 80px;
+}
+.hero-image {
+    width: 100%;
+}
+
+.hero-text {
+    font-size: 80px;
+    font-weight: 900;
+    coleor: white;
+}
+.hero-span {
+    color: yellow;
+}
+
+.left-section {
+    /* border: 1px solid gold; */
+    width: 50%;
+    margin-left: 80px;
+}
+
+.right-section {
+    /* border: 1px solid orange; */
+    width: 50%;
+    margin-right: 80px;
+}
+.gallery {
+    /* border: 1px solid white; */
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.gallery-image {
+    width: 400px;
+    height: 400px;
+}
+
+/* STYLING FOR SERVICES PAGE */
+.services-container {
+    background-color: white;
+}
+.top-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+.bottom-section {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.services-card {
+    width: 30%;
+    /* height: 200px; */
+    /* border: 1px solid blue; */
+    text-align: center;
+    box-shadow: 5px 10px 8px rgb(169, 34, 187);
+}
+.service-card-img {
+    width: 200px;
+    height: 150px;
+}
+.read-more {
+    text-decoration: none;
+    border: 1px solid orange;
+    background-color: orange;
+    padding: 10px, 5px;
+    border-radius: 10px;
+    display: block;
+    width: 100px;
+    margin: 15px auto;
+}
+
+.read-more:hover {
+    background-color: orangered;
+    color: azure;
+}
+
+.footer-text{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* responsiveness for services page */
+@media screen and (max-width: 320px) {
+
+    header {
+        margin-top: 30px;
+        padding: 0 10px;
+     }
+
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+     }
+    .services-card {
+        width: 100%;
+        margin: 40px 0;
+     }
+
+    nav {
+        display: none;
+     }
+
+    
+    .logo { 
+        height: 40px;
+     }
+
+
+    .logo-text {
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+     }
+}   
+@media screen and (max-width: 425px) {
+    body {
+        background-color: aqua;
+    }
+    header {
+        margin: 20px 0;
+        padding: 0 10px;
+     }
+    nav {
+        display: none;
+     }
+    .header-btn {
+        display: none;
+     }
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+     }
+     .services-card {
+        width: 100%;
+        margin: 60px auto;
+     }
+    }
+
+    @media screen and (max-width: 768px) {
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            margin-top: 20px;
+            padding: 0 80px;
+         }
+
+         nav {
+             margin: 30px auto;
+         }
+         .header-btn {
+            display: none;
+         }
+        .bottom-section {
+            display: flex;
+            flex-direction: column;
+         }
+         .services-card {
+            width: 90%;
+            margin: 60px auto;
+         }
+}
+@media screen and (max-width: 375px) {
+    header {
+        margin: 20px 0;
+        padding: 0 10px;
+     }
+    nav {
+        display: none;
+     }
+    .header-btn {
+        display: none;
+     }
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+     }
+     .services-card {
+        width: 90%;
+        margin: 60px auto;
+     }
+}
+/* ABOUT PAGE STYLING */
+.about-container {
+    /* border: 1px solid white; */
+    /* height: 70vh; */
+    display: flex;
+    padding-top: 40px;
+    /* flex-wrap: wrap; */
+}
+.about-left-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 0 30px;
+}
+.about-heading {
+    font-size: 70px;
+    color: white;
+}
+.about-right-section {
+    width: 60%;
+    padding-left: 20px; 
+}
+.about-text {
+   color: white;
+   font-size: 25px; 
+}
+.about-img {
+    width:100%;
+}
